@@ -2,7 +2,7 @@
 
 ### Organization: Conservation Science Partners, Inc.
 
-### Contact: Dr. Justin Suraci ([justin\@csp-inc.org](mailto:justin@csp-inc.org){.email})
+### Contact: Dr. Justin Suraci ([justin\@csp-inc.org](mailto:justin@csp-inc.org))
 
 This repo contains all code required to replication the analyses described in [ADD LINK TO PAPER].
 

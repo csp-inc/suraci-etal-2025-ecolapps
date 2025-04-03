@@ -1,3 +1,16 @@
+## ---------------------------
+##
+## Script name: 03-fit-puma-ssf.R
+##
+## Purpose: Fit SSF models and perform
+## two-stage model selection
+##
+## Author: Justin Suraci
+##
+## Email contact: justin@csp-inc.org
+##
+## ---------------------------
+
 library(tidyverse)
 library(sf)
 library(terra)

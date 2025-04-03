@@ -1,4 +1,17 @@
-# -*- coding: utf-8 -*-
+## ---------------------------
+##
+## Script name: 01-puma-ssf-covs.py
+##
+## Purpose: prepare environmental
+## covariates in Google Earth Engine 
+## for SSF analysis
+##
+## Author: Justin Suraci
+##
+## Email contact: justin@csp-inc.org
+##
+## ---------------------------
+
 import ee
 import math
 

@@ -1,3 +1,16 @@
+## ---------------------------
+##
+## Script name: 05-predict-puma-ssf.R
+##
+## Purpose: Create prediction surfaces
+## for top puma SSF models
+##
+## Author: Justin Suraci
+##
+## Email contact: justin@csp-inc.org
+##
+## ---------------------------
+
 library(tidyverse)
 library(sf)
 library(terra)

@@ -1,3 +1,16 @@
+## ---------------------------
+##
+## Script name: 04-ssf-corss-val.R
+##
+## Purpose: Perform k-fold cross-validation
+## on top SSF models for each age-sex class
+##
+## Author: Justin Suraci
+##
+## Email contact: justin@csp-inc.org
+##
+## ---------------------------
+
 library(tidyverse)
 library(glmmTMB)
 source("code/utils/kfoldSSF_glmm.R")

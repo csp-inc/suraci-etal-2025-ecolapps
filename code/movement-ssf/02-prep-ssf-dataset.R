@@ -1,3 +1,16 @@
+## ---------------------------
+##
+## Script name: 02-prep-ssf-dataset.R
+##
+## Purpose: Perpare analysis-ready used-
+## available datasets for SSF models
+##
+## Author: Justin Suraci
+##
+## Email contact: justin@csp-inc.org
+##
+## ---------------------------
+
 library(tidyverse)
 library(sf)
 library(terra)

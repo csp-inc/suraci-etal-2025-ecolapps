@@ -1,3 +1,15 @@
+## ---------------------------
+##
+## Script name: 06-ssf-visualization.R
+##
+## Purpose: Code for all SSF-related plots
+##
+## Author: Justin Suraci
+##
+## Email contact: justin@csp-inc.org
+##
+## ---------------------------
+
 library(tidyverse)
 library(terra)
 library(sf)
@@ -652,29 +664,3 @@ df_shrub <- nonLinPlot(mod = disp_fem_top,
                        se_col = df_col)
 
 grid.arrange(af_shrub$plot, am_shrub$plot, df_shrub$plot, nrow = 1)
-
-
-#-------------------------------
-#------------SCRATCH------------
-#-------------------------------
-# All model coefs on one plot...
-coefPrep <- function(data, as_class){
-  out <- data %>% select(term, estimate, std.error) %>% 
-    mutate(ci95 = std.error * 1.96,
-           as_class = as_class)
-}
-all_coef <- rbind(coefPrep(af_coef, 'ad_fem'),
-                  coefPrep(am_coef, 'ad_male'),
-                  coefPrep(df_coef, 'disp_fem'),
-                  coefPrep(dm_coef, 'disp_male'))
-
-dodge = position_dodge(width=1)
-ggplot(data = all_coef, aes(x = estimate, y = term, color = as_class)) + 
-  geom_point(position = dodge) +
-  geom_errorbar(aes(xmax = estimate + ci95, xmin = estimate - ci95), position = dodge) +
-  # geom_rect(aes(xmin = -Inf, xmax = Inf, ymin = 0.5, ymax = 1.5),
-  #           alpha = 1/5,
-  #           fill = 'grey',
-  #           colour = 'grey') +
-  theme_bw()
-  

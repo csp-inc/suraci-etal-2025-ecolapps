@@ -1,12 +1,15 @@
 # Suraci et al. 2024. Puma habitat preferences when moving and feeding predict the potential for human-carnivore conflict in shared landscapes. Ecological Applications
 
 ### Organization: Conservation Science Partners, Inc.
-### Contact: Dr. Justin Suraci (justin@csp-inc.org)
 
-This repo contains all code required to replication the analyses described in [ADD LINK TO PAPER]. This work... [ADD DESCRIPTION]
-<br>
-<br>
-## *Analysis Workflow* <br>
-[JUSTIN TO ADD]
+### Contact: Dr. Justin Suraci ([justin\@csp-inc.org](mailto:justin@csp-inc.org){.email})
 
+This repo contains all code required to replication the analyses described in [ADD LINK TO PAPER].
 
+#### *Abstract*
+
+Large carnivore persistence in an increasingly human-dominated world requires co-existence between carnivores and people on shared landscapes. Yet sharing space with carnivores presents challenges, including maintaining sufficient habitat to allow carnivores to satisfy life history needs (e.g., hunting, dispersal, territory establishment) while avoiding conflict with people. To understand the drivers of carnivore habitat use and conflict in shared landscapes, we quantified puma (Puma concolor) habitat selection while moving and while feeding on native prey across a mosaic of developed areas, working landscapes, and wildlands on the Olympic Peninsula, Washington, USA. We fit resource selection models to movement data from GPS collars and to kill site locations for pumas across four age-sex classes: male and female adults and dispersers. We then quantified the association between habitat preferences for each behavioral state (moving and feeding) and the spatial distribution of puma-human interactions reported to state wildlife authorities. Across age-sex classes, puma habitat selection was more strongly influenced by human land uses when moving than when feeding, with adult females being the only age-sex class to exhibit avoidance of development and agriculture when feeding. Correspondingly, areas categorized as highly suitable for feeding but unsuitable for movement tended to have substantially greater amounts of developed and agricultural land than areas considered suitable for both behaviors. Analysis of puma-human interactions revealed that habitat preferences when feeding were strongly associated with the probability of both domestic animal depredations and sightings of pumas by people across most puma age-sex classes (except adult females). By contrast, habitat selection when moving was negatively associated with depredations and sightings for all pumas. These findings suggest that pumas are encountering livestock, pets, and people opportunistically in areas that are otherwise highly suitable for hunting native prey, but that sensitivity to human disturbance when moving across the landscape leads to limited opportunity for conflict when engaged in this behavior. We leveraged these findings to identify important multifunctional habitat across our study area (i.e., places that will support both moving and feeding) and to explore pathways towards stable puma-human coexistence based on achievable changes to human behavior that minimize conflict opportunities.
+
+#### *Analysis Workflow*
+
+This study consisted of three interrelated analyses: quantifying habitat selection by pumas when (1) moving and (2) feeding on kills, and (3) quantifying the relationship between habitat suitability for each of those behaviors (moving and feeding) and reported incidents of puma-human interaction or conflict (i.e., domestic animal depredations and sightings of or encounters with pumas). All code for each analysis is included in a labeled sub-directory in the `code` directory. Within the `movement-ssf` and `kill-rsf` sub-directories, scripts are numbered and presented in sequential order, going from covariate and dataset preparation, through model fitting and testing, to prediction and visualization. The two scripts in the `conflict-analysis` sub-directory are self-contained but depend on final outputs from the movement and kill site analyses.

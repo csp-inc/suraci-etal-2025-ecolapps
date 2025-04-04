@@ -1,3 +1,17 @@
+## ---------------------------
+##
+## Script name: age-sex-02-RSF-disp-male.R
+##
+## Purpose: Fits RSF models for dispersing male pumas and then performs a model 
+## selection routine
+##
+## Author: Mae Lacey
+##
+## Email contact: mae@csp-inc.org
+##
+## ---------------------------
+
+
 library(ggeffects)
 library(ggplot2)
 library(raster)

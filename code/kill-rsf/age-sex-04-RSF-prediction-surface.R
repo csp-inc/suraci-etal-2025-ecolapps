@@ -1,3 +1,16 @@
+## ---------------------------
+##
+## Script name: age-sex-04-RSF-prediction-surface.R
+##
+## Purpose: Create prediction surfaces for top kill site RSF models
+##
+## Author: Mae Lacey
+##
+## Email contact: mae@csp-inc.org
+##
+## ---------------------------
+
+
 library(amt)
 library(tidyverse)
 library(terra)

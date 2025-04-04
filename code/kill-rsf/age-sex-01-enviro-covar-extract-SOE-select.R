@@ -1,3 +1,19 @@
+## ---------------------------
+##
+## Script name: age-sex-01-enviro-covar-extract-SOE-select.R
+##
+## Purpose: Cleans kill site data, extracts environmental covariates at all kill
+## site locations, then performs a scale of effect analysis to select the relevant 
+## scale at which each covariate is processed. Final age/sex-specific dataframes 
+## retaining covariates processed at the scales selected are then prepared and 
+## exported for modeling.
+##
+## Author: Mae Lacey
+##
+## Email contact: mae@csp-inc.org
+##
+## ---------------------------
+
 
 ###################################################
 ## Clean up kill site data and remove duplicates ##

@@ -1,3 +1,16 @@
+## ---------------------------
+##
+## Script name: age-sex-pooled-02-RSF.R
+##
+## Purpose: Fits pooled RSF models and then performs a model selection routine
+##
+## Author: Mae Lacey
+##
+## Email contact: mae@csp-inc.org
+##
+## ---------------------------
+
+
 library(ggeffects)
 library(ggplot2)
 library(raster)

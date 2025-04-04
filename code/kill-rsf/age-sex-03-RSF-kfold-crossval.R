@@ -1,3 +1,17 @@
+## ---------------------------
+##
+## Script name: age-sex-03-RSF-kfold-crossval.R
+##
+## Purpose: Performs k-fold cross-validation on top RSF models for each age-sex
+## class
+##
+## Author: Mae Lacey
+##
+## Email contact: mae@csp-inc.org
+##
+## ---------------------------
+
+
 #install_github("BastilleRousseau/IndRSA")
 library(devtools)
 library(IndRSA)

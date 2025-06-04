@@ -1,4 +1,4 @@
-# Suraci et al. 2024. Puma habitat preferences when moving and feeding predict the potential for human-carnivore conflict in shared landscapes. Ecological Applications
+# Suraci et al. 2025. Puma habitat preferences when moving and feeding predict the potential for human-carnivore conflict in shared landscapes. Ecological Applications
 
 ### Organization: Conservation Science Partners, Inc.
 

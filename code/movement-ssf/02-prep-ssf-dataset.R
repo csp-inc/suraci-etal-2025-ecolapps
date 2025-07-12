@@ -114,6 +114,7 @@ puma_ssf_dat <- puma_ssf_dat %>%
   mutate(unique_step = paste(name, age_class, yr, step_id_, sep = "_"))
 
 # Save it
-save(puma_ssf_dat, file = "data/puma-ssf-dataset-20230701.rda")
+save(puma_ssf_dat, file = "data/puma-ssf-dataset-final.rda")
+write_csv(puma_ssf_dat, file = "data/puma-ssf-dataset-final.csv")
 
 

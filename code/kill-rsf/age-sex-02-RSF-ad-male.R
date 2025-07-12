@@ -21,9 +21,9 @@ library(dplyr)
 library(blme)
 
 # Load model definitions
-source('C:/Users/mae/Documents/github/pred-services/code/utils/rsf-age-sex-mod-select.R')
+source('utils/rsf-age-sex-mod-select.R')
 # Load kill site dataset
-load("age-sex-class-RSFs/age_sex_RSF_covariate_extract.rda")
+load("data/age_sex_RSF_covariate_extract.rda")
 # setting age/sex class of interest for modeling + file names
 age_sex <- ad_male
 group <- "ad-male"

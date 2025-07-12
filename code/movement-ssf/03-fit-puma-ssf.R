@@ -21,10 +21,10 @@ library(MuMIn)
 library(AICcmodavg)
 
 # Load model definitions
-source('code/utils/ssf-mod-lkp-v2.R')
+source('utils/ssf-mod-lkp-v2.R')
 
 # ---------- Compile Analysis Datasets -------------------
-load(file = "data/puma-ssf-dataset-20230701.rda", verbose = TRUE)
+puma_ssf_dat <- read_csv("data/puma-ssf-dataset-final.csv")
 ssf_dat <- puma_ssf_dat %>% 
   dplyr::mutate(case = as.numeric(case_))
 

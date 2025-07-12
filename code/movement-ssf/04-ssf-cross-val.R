@@ -13,7 +13,7 @@
 
 library(tidyverse)
 library(glmmTMB)
-source("code/utils/kfoldSSF_glmm.R")
+source("utils/kfoldSSF_glmm.R")
 
 # Load top models for each age/sex class
 load("output/ad-fem-ssf-top-mod-v2.rda")

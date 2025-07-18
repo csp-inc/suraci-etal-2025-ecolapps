@@ -22,9 +22,7 @@ library(blme)
 # Load model definitions
 source('utils/rsf-age-sex-mod-select.R')
 # Load kill site dataset
-load("data/age_sex_pooled_RSF_covariate_extract.rda")
-# Setting age/sex class of interest for modeling + file names
-age_sex <- all_age_sex # here, we're using the full dataset (as opposed to specific age-sex groups)
+age_sex <- read.csv("age-sex-class-RSFs/age-sex-pooled-RSF/Suraci_etal_2025_AgeSexRSF_covariates_pooled.rda")
 
 
 # ------------------------------------------------------------------------------

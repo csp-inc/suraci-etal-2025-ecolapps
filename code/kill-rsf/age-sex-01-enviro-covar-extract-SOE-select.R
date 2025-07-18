@@ -251,8 +251,10 @@ disp_fem <- subset(all_age_sex, age_sex =="Female_disperser")
 disp_male <- subset(all_age_sex, age_sex =="Male_disperser")
 
 # save age-sex classes:
-save(list = c("ad_fem", "ad_male", "disp_fem", "disp_male"), 
-     file = "age-sex-class-RSFs/age_sex_RSF_covariate_extract.rda")
+write.csv(ad_fem, "age-sex-class-RSFs/Suraci_etal_2025_AgeSexRSF_covariates_ad_fem.csv")
+write.csv(ad_male, "age-sex-class-RSFs/Suraci_etal_2025_AgeSexRSF_covariates_ad_male.csv")
+write.csv(disp_fem, "age-sex-class-RSFs/Suraci_etal_2025_AgeSexRSF_covariates_disp_fem.csv")
+write.csv(disp_male, "age-sex-class-RSFs/Suraci_etal_2025_AgeSexRSF_covariates_disp_male.csv")
 
 
 # ------------------------------------------------------------------------------

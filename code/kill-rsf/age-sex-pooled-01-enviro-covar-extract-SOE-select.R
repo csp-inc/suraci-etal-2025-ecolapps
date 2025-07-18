@@ -243,8 +243,7 @@ all_age_sex <- selected_df %>%
                 slope, slope_sq, RAPtree, RAPtree_sq, edge, edge_sq) 
 
 # save age-sex classes:
-save(list = c("all_age_sex"), 
-     file = "age-sex-class-RSFs/age-sex-pooled-RSF/age_sex_pooled_RSF_covariate_extract.rda")
+write.csv(all_age_sex, "age-sex-class-RSFs/age-sex-pooled-RSF/Suraci_etal_2025_AgeSexRSF_covariates_pooled.rda")
 
 
 # ------------------------------------------------------------------------------

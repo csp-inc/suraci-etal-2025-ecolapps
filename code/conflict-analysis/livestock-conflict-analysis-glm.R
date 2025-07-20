@@ -66,8 +66,8 @@ prepare_model_data <- function(raster=raster,
   
 # Load conflict data ------------------------------------------------------
 
-conflict_raw <- st_read("data/cougage-ALL-conflict-2016to2022/cougar_ALL_conflict_2016to2022.shp") %>%
-  st_transform(., crs=26910)
+conflict_raw <- st_read("data/conflict-analysis/wdfw-conflict-data-2016-2022.shp") %>%
+  st_transform(crs=26910)
 
 conflict_livestock <- conflict_raw %>%
   dplyr::filter(IncidentTy == "Livestock")
@@ -77,41 +77,41 @@ conflict_sight_confront <- conflict_raw %>%
 
 # Load raster data ------------------------------------------------------
 
-all_cats_ssf <- rast("output/pooled-ssf-prediction-30m.tif")
+all_cats_ssf <- rast("output/age-sex-pooled-move-ssf-prediction-30m.tiff")
 names(all_cats_ssf) <- "all_cats_SSF"
 
-ad_m_ssf <- rast("output/ad-male-ssf-prediction-30m.tif")
+ad_m_ssf <- rast("output/ad-male-move-ssf-prediction-30m.tif")
 names(ad_m_ssf) <- "ad_m_SSF"
 
-disp_m_ssf <- rast("output/disp-male-ssf-prediction-30m.tif")
+disp_m_ssf <- rast("output/disp-male-move-ssf-prediction-30m.tif")
 names(disp_m_ssf) <- "disp_m_SSF"
 
-disp_f_ssf <- rast("output/disp-fem-ssf-prediction-30m.tif")
+disp_f_ssf <- rast("output/disp-fem-move-ssf-prediction-30m.tif")
 names(disp_f_ssf) <- "disp_f_SSF"
 
-ad_f_ssf <- rast("output/ad-fem-ssf-prediction-30m.tif")
+ad_f_ssf <- rast("output/ad-fem-move-ssf-prediction-30m.tif")
 names(ad_f_ssf) <- "ad_f_SSF"
 
 
-all_cats_rsf <- rast("output/age-sex-pooled-exp-aoi-30.tif")
+all_cats_rsf <- rast("output/age-sex-pooled-feed-rsf-prediction-30m.tif")
 names(all_cats_rsf) <- "all_cats_RSF"
 
-ad_m_rsf <- rast("output/ad-male-exp-aoi-30.tif")
+ad_m_rsf <- rast("output/ad-male-feed-rsf-prediction-30m.tif")
 names(ad_m_rsf) <- "ad_m_RSF"
 
-disp_m_rsf <- rast("output/disp-male-exp-aoi-30.tif")
+disp_m_rsf <- rast("output/disp-male-feed-rsf-prediction-30m.tif")
 names(disp_m_rsf) <- "disp_m_RSF"
 
-disp_f_rsf <- rast("output/disp-fem-exp-aoi-30.tif")
+disp_f_rsf <- rast("output/disp-fem-efeed-rsf-prediction-30m.tif")
 names(disp_f_rsf) <- "disp_f_RSF"
 
-ad_f_rsf <- rast("output/ad-fem-exp-aoi-30.tif")
+ad_f_rsf <- rast("output/ad-fem-feed-rsf-prediction-30m.tif")
 names(ad_f_rsf) <- "ad_f_RSF"
 
 
 # Load sampling domain ----------------------------------------------------
 
-sampling_domain <- st_read("data/conflict-sampling-domain/all_ag_VIIRS_dev_full_yr_comb_buffer3km_clipland.shp")
+sampling_domain <- st_read("data/conflict-analysis/conflict-sampling-domain.shp")
 
 # Tidy livestock conflict database ------------------------------------------------------
 livestock_conflict_tidy <- conflict_livestock %>%

@@ -1,0 +1,9 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+data/
+suraci-etal-2025-ecolapps.Rproj
+.DS_Store
+output/

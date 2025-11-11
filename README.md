@@ -4,7 +4,7 @@
 
 ### Contact: Dr. Justin Suraci ([justin\@csp-inc.org](mailto:justin@csp-inc.org))
 
-This repo contains all code required to replication the analyses described in [ADD LINK TO PAPER].
+This repo contains all code required to replication the analyses described ([here][https://esajournals.onlinelibrary.wiley.com/doi/full/10.1002/eap.70101]).
 
 #### *Abstract*
 
